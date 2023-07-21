@@ -1,0 +1,209 @@
+:root{
+    --main-color:#53769b ;
+    --sec-color:#314c68;
+}
+
+body{
+    margin: 0;
+    
+}
+
+/* projects images*/
+img[src*='project']{
+    width: 70%;
+    height: 60%;
+    max-height: 20vh;
+    border-radius: 10px;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+.container-sec{
+    margin: auto;
+    
+    overflow: auto;
+    background: linear-gradient(300deg, rgb(26, 66, 119) 3%, rgb(161, 159, 159) 38%, rgb(34, 77, 197) 68%, rgb(180, 179, 179) 98%);
+    
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    gap: 28%;
+}
+
+
+
+
+/*The Navigation bar*/
+
+.navigation{
+    display: flex;
+    background-color: var(--main-color);
+    height: 80px;
+    border-bottom: 2px solid var(--sec-color);
+}
+
+.nav-logo{
+    position: relative;
+    margin-right: auto;
+    font-size: 20px;
+    left: 5%;
+}
+
+.navigation > .nav-options{
+    position: relative;
+    background-color: var(--main-color);
+    display: flex;
+    margin-left: auto;
+    gap: 15px;  
+}
+
+.nav-options > a{
+    position: relative;
+    top: 20%;
+    right: 10%;
+    padding: 15px;
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:bold;
+    -webkit-text-stroke: 0.2px black;
+    height: 25%;
+    border-bottom: 3px solid var(--sec-color);
+    border-radius: 4px;
+}
+
+
+/*Welcome*/
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    justify-content: center;
+    position: relative;
+    bottom: 5em;
+}
+
+.hero-img{
+    float: right;
+}
+
+.hero-img > img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30em;
+    width: 30em;
+
+}
+
+.web-info{
+    color: white;
+    font-size: 50px;
+}
+
+.web-info >h1
+{
+    -webkit-text-stroke: 0.5px black;
+    position: relative;
+     
+}
+
+.fancy {
+    position: relative;
+    white-space: nowrap;
+    &:after {
+      --deco-height: 0.25em;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(var(--deco-height) * -0.625);
+      height: var(--deco-height);
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-size: auto 100%;
+      background-repeat: round;
+      background-position: 0em;
+    }
+  }
+
+button{
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    border-style: none;
+    border-radius:5px ;
+    background-color: var(--main-color);
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+/*Projects show*/
+.projects-show{
+    
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    flex: 1;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    background-color: var(--main-color);
+    min-height: 15em;
+    overflow: hidden;
+    /*Border*/
+    border-radius: 30px;
+    border-bottom: 4px solid var(--sec-color);
+    border-top: 4px solid var(--sec-color);
+}
+
+.projects-show > div > h2{
+    position: relative;
+    
+}
+
+.projects-show > div{
+    position: relative;
+    top: 10%;
+    font-size: 70%;
+}
+
+/*quote box*/
+.quotes{
+    display: flex;
+    position: relative;
+    bottom: 80px;
+    width: 80%;
+    margin: auto;
+    gap: 10%;
+}
+
+.quotes > div[class*=quote-box]{
+    text-align: center;
+    width: 50%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: auto;
+    flex: 1;
+    height: 100px;
+    
+}
+
+
+.credits{
+    position: relative;
+    background-color: var(--main-color);
+    text-align: center;
+
+}
